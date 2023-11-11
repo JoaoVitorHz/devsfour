@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Sidebar } from '@/components/SideBar/Sidebar'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +14,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="font-roboto">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet"></link>
+      </head>
+      <body className="flex">
+        <div className='w-44'>
+          <Sidebar/>
+        </div>
+        {children}
+      </body>
     </html>
   )
 }
