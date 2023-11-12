@@ -15,21 +15,17 @@ export function Menu(){
                         <BiAddToQueue className="text-base"/>
                         Cadastrar Produtos
                     </a>
-                    <a href="" className="font-semibold text-sm flex gap-2 items-center ml-2 hover:bg-blue-300 p-2">
+                    <a href="/createTypeProduct" className="font-semibold text-sm flex gap-2 items-center ml-2 hover:bg-blue-300 p-2">
                         <MdPlaylistAddCheck className="text-base"/>
                         Cadastrar Tipos
                     </a>
-                    <a href="" className="font-semibold text-sm flex gap-2 items-center ml-2 hover:bg-blue-300 p-2">
+                    <a href="/readProduct" className="font-semibold text-sm flex gap-2 items-center ml-2 hover:bg-blue-300 p-2">
                         <BiSpreadsheet className="text-base"/>
                         Ver Produtos
                     </a>
-                    <a href="" className="font-semibold text-sm flex gap-2 items-center ml-2 hover:bg-blue-300 p-2">
+                    <a href="/updateProduct" className="font-semibold text-sm flex gap-2 items-center ml-2 hover:bg-blue-300 p-2">
                         <MdSystemUpdateAlt className="text-base"/>
                         Alterar Produtos
-                    </a>
-                    <a href="" className="font-semibold text-sm flex gap-2 items-center ml-2 hover:bg-blue-300 p-2">
-                        <RiDeleteBin6Line className="text-base"/>
-                        Deletar Produtos
                     </a>
                 </div>
             </div>
